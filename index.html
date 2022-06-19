@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <!-- Area de un cuadrado -->
+      <article class="card flow">
+        <header>
+          <h3>Área de un Cuadrado</h3>
+          <p>Rellena todos los campos</p>
+        </header>
+
+        <form class="card__form flow">
+          <div class="card__image card__image--square">
+            <span>lado</span>
+          </div>
+
+          <div class="input-container">
+            <input
+              type="number"
+              name="side-square"
+              id="side-square"
+              class="card__input"
+              placeholder="Lado"
+            />
+          </div>
+
+          <button type="button" class="card__button" id="button-square">
+            Calcular
+          </button>
+        </form>
+
+        <footer class="card__footer">
+          <p>El resultado es:</p>
+          <div class="card__box" id="result-square"></div>
+        </footer>
+      </article>
+      <!-- Area de un círculo -->
+      <article class="card flow">
+        <header>
+          <h3>Área de un Círculo</h3>
+          <p>Rellena todos los campos</p>
+        </header>
+
+        <form class="card__form flow">
+          <div class="card__image card__image--circle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span>radio</span>
+          </div>
+
+          <div class="input-container">
+            <input
+              type="number"
+              name="radio-circle"
+              id="radio-circle"
+              class="card__input"
+              placeholder="Radio"
+            />
+          </div>
+
+          <button type="button" class="card__button" id="button-circle">
+            Calcular
+          </button>
+        </form>
+
+        <footer class="card__footer">
+          <p>El resultado es:</p>
+          <div class="card__box" id="result-circle"></div>
+        </footer>
+      </article>
+      <!-- Area de un triángulo -->
+      <article class="card flow">
+        <header>
+          <h3>Área de un Triángulo</h3>
+          <p>Rellena todos los campos</p>
+        </header>
+
+        <form class="card__form flow">
+          <div class="card__image card__image--triangle">
+            <span>altura</span>
+            <span>base</span>
+            <span></span>
+          </div>
+
+          <div class="input-container">
+            <input
+              type="number"
+              name="base-triangle"
+              id="base-triangle"
+              class="card__input"
+              placeholder="Base"
+            />
+            <input
+              type="number"
+              name="height-triangle"
+              id="height-triangle"
+              class="card__input"
+              placeholder="Altura"
+            />
+          </div>
+
+          <button type="button" class="card__button" id="button-triangle">
+            Calcular
+          </button>
+        </form>
+
+        <footer class="card__footer">
+          <p>El resultado es:</p>
+          <div class="card__box" id="result-triangle"></div>
+        </footer>
+      </article>
+      <!-- Altura de un triángulo isósceles-->
+      <article class="card flow">
+        <header>
+          <h3>Altura Triángulo Isósceles</h3>
+          <p>Rellena todos los campos</p>
+        </header>
+
+        <form class="card__form flow">
+          <div class="card__image card__image--triangle-isosceles">
+            <span>lado1</span>
+            <span>lado2</span>
+            <span>lado3</span>
+          </div>
+
+          <div class="input-container">
+            <input
+              type="number"
+              name="side1-triangle"
+              id="side1-triangle"
+              class="card__input"
+              placeholder="Lado 1"
+            />
+            <input
+              type="number"
+              name="side2-triangle"
+              id="side2-triangle"
+              class="card__input"
+              placeholder="Lado 2"
+            />
+            <input
+              type="number"
+              name="side3-triangle"
+              id="side3-triangle"
+              class="card__input"
+              placeholder="Lado 3"
+            />
+          </div>
+
+          <button type="button" class="card__button" id="button-isosceles">
+            Calcular
+          </button>
+        </form>
+
+        <footer class="card__footer">
+          <p>El resultado es:</p>
+          <div class="card__box" id="result-isosceles"></div>
+        </footer>
+      </article>
+      <!-- Prom. Aritmético, Geométrico y Armónico -->
+      <article class="card flow">
+        <header>
+          <h3>Promedio, Mediana y Moda</h3>
+          <p>Separa cada número con una coma (,)</p>
+        </header>
+        <form class="card__form flow">
+          <input
+            type="text"
+            name="array-numbers"
+            id="array-numbers"
+            class="card__input card__input--full"
+            placeholder="Escribe aquí la serie de números"
+          />
+          <button type="button" class="card__button" id="button-3m">
+            Calcular
+          </button>
+        </form>
+        <footer class="card__footer flow">
+          <div>
+            <p>El promedio es:</p>
+            <div class="card__box" id="result-mean"></div>
+          </div>
+          <div>
+            <p>La Mediana es:</p>
+            <div class="card__box" id="result-median"></div>
+          </div>
+          <div>
+            <p>La moda es:</p>
+            <div class="card__box" id="result-mode"></div>
+          </div>
+        </footer>
+      </article>
+      <!-- Promedio, Mediana y Moda -->
+      <article class="card flow">
+        <header>
+          <h3>Tipos de Promedios</h3>
+          <p>Separa cada número con una coma (,)</p>
+        </header>
+        <form class="card__form flow">
+          <input
+            type="text"
+            name="array-numbers"
+            id="array-mean"
+            class="card__input card__input--full"
+            placeholder="Escribe aquí la serie de números"
+          />
+          <button type="button" class="card__button" id="button-3prom">
+            Calcular
+          </button>
+        </form>
+        <footer class="card__footer flow">
+          <div>
+            <p>El promedio aritmético es:</p>
+            <div class="card__box" id="result-arit"></div>
+          </div>
+          <div>
+            <p>El promedio geométrico es:</p>
+            <div class="card__box" id="result-geo"></div>
+          </div>
+          <div>
+            <p>El promedio armónico es:</p>
+            <div class="card__box" id="result-arm"></div>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Tickets de Descuento -->
+      <article class="card card--boleta flow">
+        <header>
+          <h3>Cupones de Descuento</h3>
+          <p>Elige un cupón de dscto.</p>
+        </header>
+
+        <section class="boleta">
+          <header>
+            <h3>Empresa Prueba S.A.C.</h3>
+            <p>RUC: 12345678987</p>
+            <p>Dirección: Av. Petit Thouars 5356, Miraflores</p>
+            <p>Teléfono: 987 654 321</p>
+          </header>
+          <section class="boleta__content flow">
+            <section>
+              <h4>BOLETA ELECTRÓNICA N°234</h4>
+              <p id="fechaActual"></p>
+            </section>
+            <table>
+              <thead>
+                <tr>
+                  <td>Cant.</td>
+                  <td>Descripción</td>
+                  <td></td>
+                  <td>Importe</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Procesador intel Core i3 12100F</td>
+                  <td>S/.</td>
+                  <td>485.00</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Motherboard Asrock H610</td>
+                  <td>S/.</td>
+                  <td>445.00</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Memoria RAM 8GB 3200Mhz</td>
+                  <td>S/.</td>
+                  <td>330.00</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>M.2 NVME Samsung 512GB</td>
+                  <td>S/.</td>
+                  <td>240.00</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>RTX 3060 EVGA 12GB DDR6</td>
+                  <td>S/.</td>
+                  <td>2,150.00</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>PSU EVGA 550W 80+</td>
+                  <td>S/.</td>
+                  <td>205.00</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Memoria RAM 8GB 3200Mhz</td>
+                  <td>S/.</td>
+                  <td>330.00</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td></td>
+                  <td>Total</td>
+                  <td>S/.</td>
+                  <td>3,855.00</td>
+                </tr>
+              </tfoot>
+            </table>
+          </section>
+        </section>
+        <footer class="card__footer flow">
+          <p class="card__text">
+            Por compras superiores a S/ 3,000 puedes generar un cupón de
+            descuento. Elige el que más te guste.
+          </p>
+          <div class="ticket">
+            <div class="ticket__item" id="first-ticket">
+              <span
+                >10% <br />
+                dscto</span
+              >
+              <div class="ticket__cut"></div>
+              <div class="ticket__circle ticket__circle--left"></div>
+              <div class="ticket__circle ticket__circle--right"></div>
+            </div>
+            <div class="ticket__item" id="second-ticket">
+              <span
+                >S/. 150.00 <br />
+                dscto</span
+              >
+              <div class="ticket__cut"></div>
+              <div class="ticket__circle ticket__circle--left"></div>
+              <div class="ticket__circle ticket__circle--right"></div>
+            </div>
+            <div class="ticket__item" id="third-ticket">
+              <span
+                >Regalo: <br />
+                Teclado</span
+              >
+              <div class="ticket__cut"></div>
+              <div class="ticket__circle ticket__circle--left"></div>
+              <div class="ticket__circle ticket__circle--right"></div>
+            </div>
+          </div>
+          <p class="card__box" id="ticket-result"></p>
+        </footer>
+      </article>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
